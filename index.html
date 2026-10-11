@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Усманова Артура Ильнуровича — студента 1 курса коледжа. Проекты, навыки и контакты.">
+  <title>Усманов Артур — Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">А<span>У</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link">Главная</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#skills" class="nav__link">Навыки</a>
+        <a href="#projects" class="nav__link">Проекты</a>
+        <a href="#education" class="nav__link">Образование</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ГЛАВНАЯ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__hello">Привет, меня зовут</p>
+          <h1 class="hero__title">Усманов Артур<br><span>Ильнурович</span></h1>
+          <p class="hero__subtitle">Студент 1 курса коледжа. Создаю веб-приложения и развиваю свои проекты.</p>
+          <div class="hero__btns">
+            <a href="#projects" class="btn btn--primary">Мои проекты</a>
+            <a href="#contact" class="btn btn--ghost">Связаться</a>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__avatar">АУ</div>
+          <ul class="hero__facts">
+            <li><span>Направление</span> Разработка / ИТ</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Пролистать вниз">↓</a>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal reveal--top">Обо мне</h2>
+        <div class="about">
+          <div class="about__text reveal reveal--left">
+            <p>Меня зовут <strong>Усманов Артур Ильнурович</strong>. Я учусь на 1 курсе коледжа и получаю общее среднее образование по специальности разработка и управление программным обеспечением.</p>
+            <p>Этот сайт — моё портфолио. Здесь я собираю свои проекты и учебные работы.</p>
+            <p>Сейчас я развиваюсь, изучаю основы веб-разработки и параллельно работаю над собственными проектами. Список проектов будет пополняться.</p>
+          </div>
+          <div class="about__info reveal reveal--right">
+            <div class="info__item"><span>ФИО</span>Усманов Артур Ильнурович</div>
+            <div class="info__item"><span>Настоящее время</span>1 курс коледжа</div>
+            <div class="info__item"><span>Деятельность</span>Разработка и управление программным обеспечением</div>
+            <div class="info__item"><span>Языки</span>Русский, Английский</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НАВЫКИ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal reveal--right">Навыки</h2>
+        <div class="skills">
+
+          <div class="skill reveal reveal--left" style="--d:0ms">
+            <div class="skill__head"><span>HTML</span><span>70%</span></div>
+            <div class="skill__bar"><i style="--w:70%"></i></div>
+          </div>
+
+          <div class="skill reveal reveal--right" style="--d:150ms">
+            <div class="skill__head"><span>Python</span><span>65%</span></div>
+            <div class="skill__bar"><i style="--w:65%"></i></div>
+          </div>
+
+          <div class="skill reveal reveal--top" style="--d:300ms">
+            <div class="skill__head"><span>JavaScript (основы)</span><span>45%</span></div>
+            <div class="skill__bar"><i style="--w:45%"></i></div>
+          </div>
+
+        </div>
+
+        <div class="tags">
+          <span class="tag reveal reveal--top" style="--d:0ms">Git (базово)</span>
+          <span class="tag reveal reveal--top" style="--d:120ms">Работа в команде</span>
+          <span class="tag reveal reveal--top" style="--d:240ms">Поиск информации</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОЕКТЫ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal reveal--left">Проекты</h2>
+
+        <div class="projects">
+
+          <article class="project project--soon reveal reveal--left">
+            <div class="project__badge">Готовится к публикации</div>
+            <h3 class="project__title">Разработка веб-приложения «Мои оценки»</h3>
+            <p class="project__desc">Веб-приложение для учёта и отображения оценок: список предметов, добавление оценок, расчёт среднего балла и просмотр статистики успеваемости.</p>
+            <ul class="project__points">
+              <li>Ввод и хранение оценок по предметам</li>
+              <li>Расчёт среднего балла</li>
+              <li>Удобный интерфейс для студента</li>
+            </ul>
+            <div class="project__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project__status">
+              <span class="dot"></span> Скоро появится на сайте
+            </div>
+          </article>
+
+          <article class="project project--empty reveal reveal--right">
+            <div class="project__plus">+</div>
+            <h3 class="project__title">Следующий проект</h3>
+            <p class="project__desc">Здесь появится новая работа. Раздел открыт для будущих проектов, которые я буду добавлять по мере обучения.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ОБРАЗОВАНИЕ -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title reveal reveal--top">Образование</h2>
+        <div class="timeline">
+          <div class="timeline__item reveal reveal--left">
+            <div class="timeline__dot"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">настоящее время</span>
+              <h4>Основное общее образование</h4>
+              <p>Имею только основное общее образование. Сейчас обучаюсь на 1 курсе коледжа по специальности «Разработка и управление программным обеспечением».</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal reveal--right">Контакты</h2>
+
+        <div class="contact">
+          <div class="contact__item reveal reveal--tl" style="--d:0ms"><span>Имя</span>Усманов Артур Ильнурович</div>
+          <div class="contact__item reveal reveal--tr" style="--d:120ms"><span>E-mail</span>turik20092010@gmail.com</div>
+          <div class="contact__item reveal reveal--br" style="--d:240ms"><span>Телефон</span><a href="tel:+79174020580">+7 917 402-05-80</a></div>
+          <div class="contact__item reveal reveal--bl" style="--d:360ms"><span>Город</span>Республика Башкортостан, г. Салават</div>
+        </div>
+
+        <div class="contact__cta reveal reveal--top" style="--d:420ms">
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=turik20092010@gmail.com&amp;su=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D1%80%D1%82%D1%83%D1%80" target="_blank" rel="noopener" class="btn btn--primary">Написать письмо</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Усманов Артур Ильнурович — портфолио</p>
+      <a href="#home" class="footer__top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
